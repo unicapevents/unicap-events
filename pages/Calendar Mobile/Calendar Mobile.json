@@ -1,0 +1,58 @@
+{
+  "unpublishedPage": {
+    "name": "Calendar Mobile",
+    "slug": "calendar-mobile",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 450,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 960,
+          "containerStyle": "none",
+          "snapRows": 108,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 86,
+          "minHeight": 850,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Calendar Mobile_ListEvents",
+              "name": "ListEvents",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment(DatePicker1.selectedDate, \"DD/MM/YYYY\").add(1,\"day\").format(\"YYYY-MM-DDT00:mm:ssZ\")",
+                "moment(DatePicker1.selectedDate, \"DD/MM/YYYY\").format(\"YYYY-MM-DDT00:mm:ssZ\")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Calendar Mobile",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "650e233b71f19735a15fc892_65136c37ae29d06fa4484a13"
+}
